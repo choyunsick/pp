@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ol, li, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(39, 40, 41);
+}
+body header {
+  width: 100%;
+  background-color: #fff;
+}
+body header .inner {
+  width: 1180px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+body header .inner h1 {
+  position: absolute;
+  left: 18%;
+  bottom: 50px;
+  font-size: 80px;
+  color: yellowgreen;
+  font-family: "Barriecito", cursive;
+  margin-bottom: 40px;
+}
+body header .inner .menu {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+body header .inner .menu #main {
+  width: 100%;
+}
+body header .inner .menu #main li {
+  float: left;
+  text-align: center;
+}
+body header .inner .menu #main li a {
+  font: bold 20px/1 "arial";
+  color: #444;
+  display: block;
+  padding: 14px 20px;
+  font: bold 18px/1 "arial";
+  color: #000;
+}
+body header .inner .menu #main li:hover {
+  background-color: burlywood;
+  color: #000;
+}
+body figure {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  background-color: #555;
+  margin-right: 200px;
+}
+body figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+body figure .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body figure .inner h2 {
+  font: bold 60px/1 "arial";
+  font-family: "Barriecito", cursive;
+  color: aquamarine;
+  margin-bottom: 50px;
+  display: block;
+  opacity: 0.7;
+}
+body figure .inner p {
+  font: 25px/1 "arial";
+  color: #000;
+  margin-bottom: 30px;
+  font-family: "Tilt Prism", cursive;
+}
+body figure .inner a {
+  display: block;
+  width: 400px;
+  height: 30px;
+  border: 1px solid #bbb;
+  text-align: center;
+  font: bold 11px/30px "arial";
+  color: #fff;
+}
+body figure .inner a:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+#news {
+  width: 100%;
+  background-color: #fff;
+}
+#news .inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#news .inner h1 {
+  font-size: 100px;
+  color: orangered;
+  text-align: center;
+  font-family: "Barriecito", cursive;
+}
+#news .inner .wrap {
+  width: 100%;
+}
+#news .inner .wrap article {
+  width: 280px;
+  float: left;
+  margin-right: 20px;
+}
+#news .inner .wrap article:last-child {
+  margin-right: 0px;
+}
+
+#metro nav {
+  width: 100%;
+  padding: 20px 10vw;
+  display: flex;
+  gap: 40px;
+  background-color: rgb(250, 240, 230);
+}
+#metro nav a {
+  font: 20px/1 "arial";
+  color: #999;
+}
+#metro nav a.on {
+  color: #000;
+  font-family: "Kablammo", cursive;
+}
+#metro section {
+  display: none;
+  padding: 5px;
+  background-color: khaki;
+}
+#metro section.on {
+  display: block;
+}
+#metro section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#metro section article {
+  width: 25%;
+  height: 25vw;
+  float: left;
+  padding: 30px;
+}
+#metro section article .inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+}
+#metro section.active article .inner {
+  opacity: 1;
+  transform: scale(1);
+}
+#metro section#News article .inner img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 20px 20px 15px;
+}
+#metro section#News article .inner h2 {
+  font: 40px "bold";
+  font-family: "Permanent Marker", cursive;
+  color: goldenrod;
+}
+#metro section#News article .inner i {
+  font-size: 300px;
+  color: rgb(121, 21, 91);
+}
+#metro section#News article:nth-of-type(1), #metro section#News article:nth-of-type(4), #metro section#News article:nth-of-type(9) {
+  width: 50%;
+}
+#metro section#Gallery article .inner video {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 10px 10px;
+}
+#metro section#Gallery article:nth-of-type(3), #metro section#Gallery article:nth-of-type(9) {
+  width: 50%;
+}
+#metro section#Notice article .inner {
+  background-color: orange;
+}
+#metro section#Notice article:nth-of-type(2), #metro section#Notice article:nth-of-type(8) {
+  width: 50%;
+}
+
+#visual {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  overflow: hidden;
+}
+#visual .panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#visual .panel li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 3s;
+}
+#visual .panel li.on {
+  opacity: 1;
+  z-index: 2;
+}
+#visual .panel li:nth-of-type(1) img {
+  height: 100%;
+  width: 100%;
+}
+#visual .panel li:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+#visual .panel li:nth-of-type(3) img {
+  height: 100%;
+  width: 100%;
+}
+#visual .panel li:nth-of-type(4) img {
+  height: 100%;
+  width: 100%;
+}
+#visual .btns {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+#visual .btns li {
+  width: 70px;
+  height: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#visual .btns li.on {
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
