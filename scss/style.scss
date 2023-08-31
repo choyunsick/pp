@@ -4,12 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @import "./common/reset";
 
 
 @import "./main/header";
+@import "./main/slider.scss";
 @import "./main/new.scss";
 @import "./main/metro.scss";
-@import "./main/slider.scss";
+// @import "./main/container.scss";
+@import "./main/banner.scss";
+@import "./main/contact.scss";
 @import "./main/footer.scss";
+
