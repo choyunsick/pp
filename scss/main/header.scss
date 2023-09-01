@@ -59,6 +59,24 @@ body {
             
         }
     }
+    @media screen and (max-width:1180px) {
+        header{
+            .inner{
+                width: 100%;
+                height: 300px;
+                h1{
+                    left: 20px;
+                    bottom: 30px;
+                }
+                .menuWeb{
+                    display: none;
+                }
+                .btnCall {
+                    display: block;
+                }
+            }
+        }
+    }
     figure {
         width: 100%;
         height: 80%;
@@ -93,7 +111,7 @@ body {
         
                 p {
                     font: 25px/1 "arial";
-                    color: #000;
+                    color: #fff;
                     margin-bottom: 30px;
                     font-family: 'Tilt Prism', cursive;
                    
@@ -116,3 +134,28 @@ body {
             }
         }  
     }
+@media screen and (max-width:1180px) {
+    figure {
+        height: calc(100vh - 100px);
+        background-image: url(img/banner3.webp);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        video{
+            display: none;
+        }
+
+        .inner{
+            width: 100%;
+            padding: 0px 20px;
+
+            h2{
+                font: normal 14vw/1 "arial";
+            }
+            a{
+                width: 100%;
+            }
+        }
+    }
+}

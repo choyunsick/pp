@@ -1,12 +1,12 @@
 #metro{
     nav{
         width: 100%;
-        padding: 20px 10vw;
+        padding: 40px 10vw;
         display: flex;
         gap: 40px;
         background-color: rgb(250, 240, 230);
         a{
-            font: 20px/1 "arial";color: #999;
+            font: 30px/1 "arial";color: #999;
             display: flex;
             text-align: center;
             justify-content: center;
@@ -19,7 +19,7 @@
     //공통 섹션
     section{
         display: none;
-        padding: 5px;
+        padding: 20px;
         background-color: #fff;
 
 
@@ -85,6 +85,9 @@
                     font-size: 300px;
                     color: rgb(121, 21, 91);
                 }
+                p{
+                    font-size: 16px;
+                }
             }
             
             &:nth-of-type(1),
@@ -116,6 +119,9 @@
                 i{
                     font-size: 300px;
                     color: rgb(121, 21, 91);
+                }
+                p{
+                    font-size: 16px;
                 }
                 .rightleft{
                     width: 100%;
@@ -152,10 +158,16 @@
                     font: 40px "bold";
                     font-family: 'Permanent Marker', cursive;
                     color: goldenrod;
+                    text-align: center;
                 }
                 i{
                     font-size: 300px;
                     color: rgb(121, 21, 91);
+                }
+                p{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    text-align: center;
                 }
             }
             &:nth-of-type(2),
