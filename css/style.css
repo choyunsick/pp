@@ -526,6 +526,7 @@ body figure .inner a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: yellowgreen;
 }
 
 .contact input::placeholder {
