@@ -7,14 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @import "./common/reset";
+@import "./common/header.scss";
+@import "./common/footer.scss";
+@import "./common/content";
 
 
-@import "./main/header";
 @import "./main/slider.scss";
 @import "./main/new.scss";
 @import "./main/metro.scss";
 @import "./main/contain.scss";
 @import "./main/banner.scss";
 @import "./main/contact.scss";
-@import "./main/footer.scss";
+
+
+@import "./sub/information.scss";
 
