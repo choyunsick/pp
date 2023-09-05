@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -231,7 +232,7 @@ footer .inner p {
 
 .charge {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   background-color: aquamarine;
   margin: 0 auto;
 }
@@ -661,51 +662,46 @@ footer .inner p {
   height: 100vh;
   background-color: #fff;
 }
-.information .inner {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #fff;
-  margin-top: 50px;
-}
 .information .inner h1 {
-  font: bold 100px/1 "arial";
-  color: #555;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: "Barriecito", cursive;
+  font-size: 300%;
+  font-weight: normal;
+  color: linear-gradient(135deg, #c94949, #93a857);
+  margin: 0;
+  text-align: left;
+  margin-left: 20vh;
+  font-family: "Oswald", sans-serif;
 }
-.information .inner ul {
+.information .section {
+  width: 80%;
+  border-top: 1px solid #777;
+  padding: 20px 0;
+  margin: auto;
+}
+.information .section .pageitem {
+  display: table;
+  table-layout: fixed;
   width: 100%;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  text-align: justify;
 }
-.information .inner ul li {
-  width: 100%;
-  padding: 15px 20px;
-  border: 1px solid #111;
-  margin-bottom: 20px;
+.information .section .pageitem h2 {
+  font-size: 180%;
+  background-color: inherit;
+  color: #444;
+  margin-top: 0;
 }
-.information .inner ul li:after {
-  content: "";
-  display: block;
-  clear: both;
+.information .section .pageitem p {
+  padding: 0;
+  margin: 1em 0;
+  font-size: 115%;
 }
-.information .inner ul li a {
-  font: 12px/1 "arial";
-  color: #555;
-  float: left;
+.information .section .pageitem a {
+  text-decoration: underline;
 }
-.information .inner ul li span {
-  font: 12px/1 "arial";
-  color: #888;
-  float: right;
-}
-.information .inner ul li:hover {
-  background-color: #555;
-}
-.information .inner ul li:hover a {
-  color: #fff;
-}
-.information .inner ul li:hover span {
-  color: #eee;
+.information .section .pageitem .col {
+  padding: 0 2% 0 1%;
+  display: table-cell;
 }
 
 /*# sourceMappingURL=style.css.map */
