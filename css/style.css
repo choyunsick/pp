@@ -684,6 +684,18 @@ footer .inner p {
   padding-top: 15px;
   text-align: justify;
 }
+.information .section .pageitem .jog {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information .section .pageitem .jog video {
+  width: 40%;
+  opacity: 0.8;
+  border-radius: 30%;
+  box-shadow: 10px 15px 15px #000;
+}
 .information .section .pageitem h2 {
   font-size: 180%;
   background-color: inherit;
@@ -701,6 +713,14 @@ footer .inner p {
 .information .section .pageitem .col {
   padding: 0 2% 0 1%;
   display: table-cell;
+}
+.information .section .pageitem .col img {
+  width: 39%;
+  height: 30%;
+  position: absolute;
+  margin-right: 300px;
+  box-shadow: 10px 10px 15px #000;
+  opacity: 0.8;
 }
 
 .charge {
