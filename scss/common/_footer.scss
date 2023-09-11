@@ -84,3 +84,11 @@ footer {
         }
     }
 }
+@media screen and (max-width:540px){
+    footer{
+        .inner{
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+}
