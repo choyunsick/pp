@@ -9,6 +9,7 @@
 
 @import "./common/reset";
 @import "./common/header.scss";
+@import "./common/figure.scss";
 @import "./common/footer.scss";
 @import "./common/content";
 
@@ -25,3 +26,6 @@
 @import "./sub/service.scss";
 
 
+body{
+    overflow-x: hidden;
+}

@@ -19,20 +19,17 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: rgb(39, 40, 41);
-}
-body header {
+header {
   width: 100%;
   background-color: #fff;
 }
-body header .inner {
+header .inner {
   width: 1180px;
   height: 200px;
   margin: 0 auto;
   position: relative;
 }
-body header .inner h1 {
+header .inner h1 {
   position: absolute;
   left: 18%;
   bottom: 50px;
@@ -41,20 +38,20 @@ body header .inner h1 {
   font-family: "Barriecito", cursive;
   margin-bottom: 40px;
 }
-body header .inner .menu {
+header .inner .menu {
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-body header .inner .menu #main {
+header .inner .menu #main {
   width: 100%;
 }
-body header .inner .menu #main li {
+header .inner .menu #main li {
   float: left;
   text-align: center;
 }
-body header .inner .menu #main li a {
+header .inner .menu #main li a {
   font: bold 20px/1 "arial";
   color: #444;
   display: block;
@@ -62,40 +59,45 @@ body header .inner .menu #main li a {
   font: bold 18px/1 "arial";
   color: #000;
 }
-body header .inner .menu #main li:hover {
+header .inner .menu #main li:hover {
   background-color: burlywood;
   color: #000;
 }
+
 @media screen and (max-width: 1180px) {
-  body header .inner {
+  header .inner {
     width: 100%;
     height: 300px;
   }
-  body header .inner h1 {
-    left: 20px;
-    bottom: 30px;
+  header .inner h1 {
+    left: 50px;
+    bottom: 150px;
+    font-size: 40px;
+    text-align: center;
+    color: red;
   }
-  body header .inner .menuWeb {
+  header .inner .menu {
     display: none;
+    overflow: hidden;
   }
-  body header .inner .btnCall {
+  header .inner .btnCall {
     display: block;
   }
 }
-body figure {
+figure {
   width: 100%;
   height: 80%;
   overflow: hidden;
   background-color: #555;
   margin-right: 200px;
 }
-body figure video {
+figure video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
 }
-body figure .inner {
+figure .inner {
   width: 1180px;
   margin: 0 auto;
   position: absolute;
@@ -103,7 +105,7 @@ body figure .inner {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body figure .inner h2 {
+figure .inner h2 {
   font: bold 60px/1 "arial";
   font-family: "Barriecito", cursive;
   color: aquamarine;
@@ -111,13 +113,13 @@ body figure .inner h2 {
   display: block;
   opacity: 0.7;
 }
-body figure .inner p {
+figure .inner p {
   font: 25px/1 "arial";
   color: #fff;
   margin-bottom: 30px;
   font-family: "Tilt Prism", cursive;
 }
-body figure .inner a {
+figure .inner a {
   display: block;
   width: 400px;
   height: 30px;
@@ -126,21 +128,14 @@ body figure .inner a {
   font: bold 11px/30px "arial";
   color: #fff;
 }
-body figure .inner a:hover {
+figure .inner a:hover {
   background-color: #fff;
   color: #555;
 }
 
 @media screen and (max-width: 1180px) {
   figure {
-    height: calc(100vh - 100px);
-    background-image: url(img/banner3.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  figure video {
-    display: none;
+    background: linear-gradient(120deg, blue, red);
   }
   figure .inner {
     width: 100%;
@@ -148,9 +143,9 @@ body figure .inner a:hover {
   }
   figure .inner h2 {
     font: normal 14vw/1 "arial";
-  }
-  figure .inner a {
-    width: 100%;
+    font-size: 40px;
+    font-family: "Barriecito", cursive;
+    color: chartreuse;
   }
 }
 footer {
@@ -328,6 +323,18 @@ footer .inner p {
   margin-right: 0px;
 }
 
+@media screen and (max-width: 1180px) {
+  #news {
+    height: 30vh;
+  }
+  #news .inner h1 {
+    left: 50px;
+    bottom: 150px;
+    font-size: 50px;
+    text-align: center;
+    color: aquamarine;
+  }
+}
 #metro nav {
   width: 100%;
   padding: 20px 10vw;
@@ -449,6 +456,86 @@ footer .inner p {
   width: 50%;
 }
 
+@media screen and (max-width: 540px) {
+  #metro nav {
+    width: 100%;
+  }
+  #metro nav h1 {
+    left: 50px;
+    bottom: 150px;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+  }
+  #metro nav .menu {
+    display: none;
+    overflow: hidden;
+  }
+  #metro nav .btnCall {
+    display: block;
+  }
+  section {
+    background-color: red;
+    height: 1000px;
+  }
+  section#News article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#News article p {
+    display: none;
+  }
+  section#News article h2 {
+    display: none;
+  }
+  section#News article i {
+    display: none;
+  }
+  section#News2 {
+    height: 20vh;
+  }
+  section#News2 article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#News2 article p {
+    display: none;
+  }
+  section#News2 article h2 {
+    display: none;
+  }
+  section#News2 article i {
+    display: none;
+  }
+  section#News3 {
+    height: 20vh;
+  }
+  section#News3 article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#News3 article p {
+    display: none;
+  }
+  section#News3 article h2 {
+    display: none;
+  }
+  section#News3 article i {
+    display: none;
+  }
+}
 .contain {
   width: 100%;
   height: 70vh;
@@ -843,6 +930,10 @@ footer .inner p {
   width: 100px;
   background-color: #000;
   border: 1px solid #fff;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
